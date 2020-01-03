@@ -39,7 +39,7 @@ const create_item = () => {
     }
   });
 
-  item.appendChild('save_btn');
+  item.appendChild(save_btn);
   return item;
 };
 
