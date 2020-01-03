@@ -33,13 +33,14 @@ const create_item = () => {
     if (input.value !== ''){
       order = order + 1;
       item.innerHTML = input.value;
-      adding == false;
+      adding = false;
     } else {
       error.innerHTML = message;
     }
   })
 
   item.appendChild('save_btn');
+  return item;
 };
 
 document.querySelectorAll('.drop').forEach(element => {
